@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Jl-ML-FGA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="1Fm-ID-X9w">
+            <objects>
+                <viewController id="rND-qc-kFL" customClass="DisableNextVC" customModule="fsCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NFK-T5-zxl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOD-VY-ij4" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="88" width="414" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5h-o8-Lvc">
+                                <rect key="frame" x="0.0" y="88" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Ssv-bs-cga"/>
+                                    <constraint firstAttribute="height" constant="60" id="UyA-bh-fkm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="prevMonthAction:" destination="rND-qc-kFL" eventType="touchUpInside" id="wAL-Rm-lAx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znE-Pw-tIt">
+                                <rect key="frame" x="354" y="88" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="BYH-Gr-qgX"/>
+                                    <constraint firstAttribute="height" constant="60" id="KvM-BY-4tu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
+                                <connections>
+                                    <action selector="nextMonthAction:" destination="rND-qc-kFL" eventType="touchUpInside" id="dTe-Rh-9if"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oYa-9b-9Lb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="znE-Pw-tIt" firstAttribute="top" secondItem="oYa-9b-9Lb" secondAttribute="top" id="2lr-Hq-ScL"/>
+                            <constraint firstItem="z5h-o8-Lvc" firstAttribute="leading" secondItem="oYa-9b-9Lb" secondAttribute="leading" id="4lW-S9-ett"/>
+                            <constraint firstItem="oYa-9b-9Lb" firstAttribute="trailing" secondItem="AOD-VY-ij4" secondAttribute="trailing" id="9sV-dT-Xjy"/>
+                            <constraint firstItem="oYa-9b-9Lb" firstAttribute="bottom" secondItem="AOD-VY-ij4" secondAttribute="bottom" constant="64" id="AjG-yH-h8g"/>
+                            <constraint firstItem="AOD-VY-ij4" firstAttribute="leading" secondItem="oYa-9b-9Lb" secondAttribute="leading" id="MIb-c6-sOL"/>
+                            <constraint firstItem="AOD-VY-ij4" firstAttribute="top" secondItem="oYa-9b-9Lb" secondAttribute="top" id="T73-Ec-ck2"/>
+                            <constraint firstItem="z5h-o8-Lvc" firstAttribute="top" secondItem="oYa-9b-9Lb" secondAttribute="top" id="l25-QT-HdJ"/>
+                            <constraint firstItem="oYa-9b-9Lb" firstAttribute="trailing" secondItem="znE-Pw-tIt" secondAttribute="trailing" id="oGs-M8-lwV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Jxt-vu-e4C"/>
+                    <navigationItem key="navigationItem" id="dvo-Yn-V4b"/>
+                    <connections>
+                        <outlet property="calendar" destination="AOD-VY-ij4" id="usn-Gs-nPe"/>
+                        <outlet property="nextMonthBtn" destination="znE-Pw-tIt" id="cYd-Wn-8P6"/>
+                        <outlet property="prevMonthBtn" destination="z5h-o8-Lvc" id="awQ-ya-msz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmk-v5-weW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="543" y="-206"/>
+        </scene>
+        <!--Disable BeforeVC-->
+        <scene sceneID="qXE-Qy-Zq1">
+            <objects>
+                <viewController id="Fbx-pb-ALT" customClass="DisableBeforeVC" customModule="fsCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zAT-XI-Aw8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebO-Pk-H3U" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="88" width="414" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOD-m6-Srs" userLabel="Previous">
+                                <rect key="frame" x="0.0" y="88" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="EmL-Kb-0Ci"/>
+                                    <constraint firstAttribute="height" constant="60" id="WPc-Bu-QKg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="prevAction:" destination="Fbx-pb-ALT" eventType="touchUpInside" id="tv6-ot-yJC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kf0-lM-H37" userLabel="Next">
+                                <rect key="frame" x="354" y="88" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="512-lX-VcP"/>
+                                    <constraint firstAttribute="height" constant="60" id="wgg-Yn-eND"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
+                                <connections>
+                                    <action selector="nextAction:" destination="Fbx-pb-ALT" eventType="touchUpInside" id="fpY-wv-H2q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sx8-xv-O4B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sx8-xv-O4B" firstAttribute="trailing" secondItem="Kf0-lM-H37" secondAttribute="trailing" id="690-nF-m1w"/>
+                            <constraint firstItem="sx8-xv-O4B" firstAttribute="trailing" secondItem="ebO-Pk-H3U" secondAttribute="trailing" id="Btx-IJ-1Gd"/>
+                            <constraint firstItem="ZOD-m6-Srs" firstAttribute="leading" secondItem="sx8-xv-O4B" secondAttribute="leading" id="DdH-HX-CCr"/>
+                            <constraint firstItem="sx8-xv-O4B" firstAttribute="bottom" secondItem="ebO-Pk-H3U" secondAttribute="bottom" constant="64" id="Dso-rD-gkZ"/>
+                            <constraint firstItem="Kf0-lM-H37" firstAttribute="top" secondItem="ZOD-m6-Srs" secondAttribute="top" id="RUg-2M-L1W"/>
+                            <constraint firstItem="ebO-Pk-H3U" firstAttribute="leading" secondItem="sx8-xv-O4B" secondAttribute="leading" id="dJF-gV-zge"/>
+                            <constraint firstItem="ebO-Pk-H3U" firstAttribute="top" secondItem="sx8-xv-O4B" secondAttribute="top" id="eZx-M0-4Um"/>
+                            <constraint firstItem="ZOD-m6-Srs" firstAttribute="top" secondItem="sx8-xv-O4B" secondAttribute="top" id="z8p-hw-QBO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xma-Ta-zss"/>
+                    <connections>
+                        <outlet property="calendar" destination="ebO-Pk-H3U" id="Kbn-si-MLP"/>
+                        <outlet property="nextBtn" destination="Kf0-lM-H37" id="Xd4-Zq-j3V"/>
+                        <outlet property="previousBtn" destination="ZOD-m6-Srs" id="RTO-gX-qv7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QuX-L2-PRB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="-206"/>
+        </scene>
+        <!--MultiSelectionView-->
+        <scene sceneID="5WL-74-Wuj">
+            <objects>
+                <viewController id="Ciz-nI-v95" customClass="MultipleStandardCalendarVC" customModule="fsCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9NS-cF-EjK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wtr-CG-eDv" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="88" width="414" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Oa4-GK-eEz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Oa4-GK-eEz" firstAttribute="trailing" secondItem="Wtr-CG-eDv" secondAttribute="trailing" id="5D1-XA-cUw"/>
+                            <constraint firstItem="Oa4-GK-eEz" firstAttribute="bottom" secondItem="Wtr-CG-eDv" secondAttribute="bottom" constant="64" id="Xd5-Jb-FkO"/>
+                            <constraint firstItem="Wtr-CG-eDv" firstAttribute="top" secondItem="Oa4-GK-eEz" secondAttribute="top" id="eNd-6C-9e0"/>
+                            <constraint firstItem="Wtr-CG-eDv" firstAttribute="leading" secondItem="Oa4-GK-eEz" secondAttribute="leading" id="mOX-fO-PXY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MultiSelectionView" selectedImage="calendar.badge.plus" catalog="system" id="q7w-wR-Prk"/>
+                    <navigationItem key="navigationItem" id="aZB-8M-UYo"/>
+                    <connections>
+                        <outlet property="calendar" destination="Wtr-CG-eDv" id="TJd-Nk-Mw0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pEp-VS-lAY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1242" y="-206"/>
+        </scene>
+        <!--CalendarStyle-->
+        <scene sceneID="KzE-4D-2qA">
+            <objects>
+                <tableViewController id="78P-g3-lrE" customClass="MultipleCalTableVC" customModule="fsCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="c25-0k-keK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainCell" textLabel="AMn-dD-yZ6" style="IBUITableViewCellStyleDefault" id="Lg5-Jc-5IK">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lg5-Jc-5IK" id="yPm-yv-u65">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AMn-dD-yZ6">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="78P-g3-lrE" id="i52-vk-VcP"/>
+                            <outlet property="delegate" destination="78P-g3-lrE" id="KD4-xk-jic"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="CalendarStyle" id="ATw-Jk-vJw"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="c25-0k-keK" id="8Wx-iH-B91"/>
+                        <segue destination="Ciz-nI-v95" kind="show" identifier="simpleMultipleSelection" id="B7S-6z-TN1"/>
+                        <segue destination="rND-qc-kFL" kind="show" identifier="disableNext" id="FsM-1L-1JD"/>
+                        <segue destination="Fbx-pb-ALT" kind="show" identifier="disableBefore" id="Ohd-9z-FcI"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVv-Pc-uxK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2184.057971014493" y="87.723214285714278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="fsCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tzx-Mn-nOz" customClass="FSCalendar">
+                                <rect key="frame" x="16" y="44" width="382" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Lyr-Ix-DB9"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkF-SE-Dgo">
+                                <rect key="frame" x="173.5" y="432.5" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                <connections>
+                                    <segue destination="XCM-9w-0lV" kind="show" id="82r-pc-o6z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tzx-Mn-nOz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5Ki-f4-FUG"/>
+                            <constraint firstItem="nkF-SE-Dgo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UPQ-5g-m3f"/>
+                            <constraint firstItem="nkF-SE-Dgo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aEt-Uj-V8Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tzx-Mn-nOz" secondAttribute="trailing" constant="16" id="lNn-lW-y3y"/>
+                            <constraint firstItem="Tzx-Mn-nOz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pdU-6a-hnK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calendar" destination="Tzx-Mn-nOz" id="KW3-Fv-iw4"/>
+                        <outlet property="newBtn" destination="nkF-SE-Dgo" id="sTs-fq-jC8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3918.8405797101454" y="478.79464285714283"/>
+        </scene>
+        <!--CalendarVC-->
+        <scene sceneID="sNA-yv-WnM">
+            <objects>
+                <viewController id="XCM-9w-0lV" customClass="FSCalendarVC" customModule="fsCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zWH-mN-lPn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Mcz-ai-jao"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UFX-Y3-eiC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oxF-n8-kkU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4686.9565217391309" y="478.79464285714283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9qU-KQ-v2M">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Jl-ML-FGA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C5W-CV-uBa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="78P-g3-lrE" kind="relationship" relationship="rootViewController" id="3Iy-FL-d3x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbQ-Gx-w6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3094.202898550725" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar.badge.plus" catalog="system" width="128" height="108"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
