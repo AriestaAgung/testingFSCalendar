@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="height" constant="60" id="UyA-bh-fkm"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system" title=" "/>
                                 <connections>
                                     <action selector="prevMonthAction:" destination="rND-qc-kFL" eventType="touchUpInside" id="wAL-Rm-lAx"/>
                                 </connections>
@@ -40,7 +40,7 @@
                                     <constraint firstAttribute="height" constant="60" id="KvM-BY-4tu"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system" title=" "/>
                                 <connections>
                                     <action selector="nextMonthAction:" destination="rND-qc-kFL" eventType="touchUpInside" id="dTe-Rh-9if"/>
                                 </connections>
@@ -90,7 +90,7 @@
                                     <constraint firstAttribute="height" constant="60" id="WPc-Bu-QKg"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system" title=" "/>
                                 <connections>
                                     <action selector="prevAction:" destination="Fbx-pb-ALT" eventType="touchUpInside" id="tv6-ot-yJC"/>
                                 </connections>
@@ -102,7 +102,7 @@
                                     <constraint firstAttribute="height" constant="60" id="wgg-Yn-eND"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system" title=" "/>
                                 <connections>
                                     <action selector="nextAction:" destination="Fbx-pb-ALT" eventType="touchUpInside" id="fpY-wv-H2q"/>
                                 </connections>

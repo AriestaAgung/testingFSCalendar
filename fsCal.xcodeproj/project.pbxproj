@@ -14,6 +14,7 @@
 		EB764B702797CA7A00B24CB6 /* fsCal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB764B6E2797CA7A00B24CB6 /* fsCal.xcdatamodeld */; };
 		EB764B722797CAB000B24CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB764B712797CAB000B24CB6 /* Assets.xcassets */; };
 		EB764B752797CAB100B24CB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB764B732797CAB100B24CB6 /* LaunchScreen.storyboard */; };
+		EB7CF0F3279E41BF00BF961A /* MultipleStandardCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7CF0F2279E41BE00BF961A /* MultipleStandardCalendarVC.swift */; };
 		EB81781E279809DA00986120 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81781D279809DA00986120 /* CustomCell.swift */; };
 		EBA6D9B3279A9797002B81B7 /* MultipleCalTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA6D9B2279A9797002B81B7 /* MultipleCalTableVC.swift */; };
 		EBA6D9B5279AA046002B81B7 /* DisableNextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA6D9B4279AA046002B81B7 /* DisableNextVC.swift */; };
@@ -34,6 +35,7 @@
 		EB764B712797CAB000B24CB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB764B742797CAB100B24CB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB764B762797CAB100B24CB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB7CF0F2279E41BE00BF961A /* MultipleStandardCalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleStandardCalendarVC.swift; sourceTree = "<group>"; };
 		EB81781D279809DA00986120 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		EBA6D9B2279A9797002B81B7 /* MultipleCalTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleCalTableVC.swift; sourceTree = "<group>"; };
 		EBA6D9B4279AA046002B81B7 /* DisableNextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableNextVC.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		EBA6D9B1279A9766002B81B7 /* MultipleCalTableView */ = {
 			isa = PBXGroup;
 			children = (
+				EB7CF0F2279E41BE00BF961A /* MultipleStandardCalendarVC.swift */,
 				EBA6D9B2279A9797002B81B7 /* MultipleCalTableVC.swift */,
 				EBA6D9B4279AA046002B81B7 /* DisableNextVC.swift */,
 				EBA6D9B6279AA0F0002B81B7 /* DisableBeforeVC.swift */,
@@ -245,6 +248,7 @@
 				EB81781E279809DA00986120 /* CustomCell.swift in Sources */,
 				EB764B682797CA7A00B24CB6 /* SceneDelegate.swift in Sources */,
 				EB764B702797CA7A00B24CB6 /* fsCal.xcdatamodeld in Sources */,
+				EB7CF0F3279E41BF00BF961A /* MultipleStandardCalendarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
