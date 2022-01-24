@@ -189,8 +189,6 @@ extension ViewController: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDe
     func calendar(_ calendar: FSCalendar, willDisplay cell: FSCalendarCell, for date: Date, at position: FSCalendarMonthPosition) {
         self.configure(cell: cell, for: date, at: position)
     }
-    
-    
 }
 
 extension Date{

@@ -74,7 +74,6 @@ class DisableNextVC: UIViewController {
     }
     
     @IBAction func nextMonthAction(_ sender: UIButton) {
-        
         calendar.setCurrentPage(getNextMonth(date: calendar.currentPage), animated: true)
         
     }
@@ -88,7 +87,6 @@ extension DisableNextVC: FSCalendarDataSource{
 }
 
 extension DisableNextVC: FSCalendarDelegate{
-
     func calendarCurrentPageDidChange(_ calendar: FSCalendar) {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM"
